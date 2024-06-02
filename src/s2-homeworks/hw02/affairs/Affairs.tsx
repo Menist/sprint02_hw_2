@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react'
+import React from 'react'
 import Affair from './affair/Affair'
 import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
@@ -14,9 +14,9 @@ function Affairs(props: AffairsPropsType) {
     const setAll = () => {
         props.setFilter('all')
     }
-    const setHigh = useCallback(() => {
+    const setHigh = () => {
         props.setFilter('high')
-    },[props])
+    }
     const setMiddle = () => {
         props.setFilter('middle')
     }
